@@ -1,6 +1,74 @@
 package JavPckge;
 
-public class Teacher extends Person{
+class Person {
+	
+	String name;
+	int age;
+	String gender;
+	
+	Person(){
+		name = "Unknown";
+		age = 0;
+		gender = "Unknown";
+	}
+	
+	Person(String n,int a,String g){
+		name = n;
+		age = a;
+		gender = g;
+	}
+	
+	Person(Person p){
+		name = p.name;
+		age = p.age;
+		gender = p.gender;
+	}
+	
+	
+	Person displayInfo(){
+		System.out.println("Name: "+name);
+		System.out.println("Age: "+age);
+		System.out.println("Gender: "+gender);
+		return this;
+		
+	}
+
+}
+
+class Course{
+	String courseCode;
+	String courseName;
+	
+	Course(String cC,String cN){
+		courseCode = cC;
+		courseName = cN;
+		
+	}
+	
+	void displayCourse(){
+		System.out.println("   "+courseCode+" - "+courseName);
+		
+	}
+}
+
+class Student extends Person{
+	String studentId;
+	
+	Student(String n,int a,String g,String i){
+		super(n,a,g);
+		studentId = i;
+		
+	}
+	
+	Student displayStudent() {
+		System.out.println("--- Teacher Information ---");
+		displayInfo(); //display basic Person Info
+		System.out.println("Student ID: "+ studentId); //Extend Person Info
+		return this;
+	}
+}
+
+class Teacher extends Person{
 	String department;
 	
 	//Implements Aggregation 'HAS-A', doesn't need super?
@@ -83,9 +151,24 @@ public class Teacher extends Person{
 	}
 }
 
+class Main {
 
-//Course CS101 = new ProgrammingFundamentals("CS101","ProgrammingFundamentals");
-//Course CS102 = new ProgrammingFundamentals("CS102","Object-Oriented Programming");
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Course CS101 = new Course("CS101","ProgrammingFundamentals");
+		Course CS102 = new Course("CS102","Object-Oriented Programming");
+		
+		Student Ana_Santos = new Student("Ana Santos",19,"Female","S1023");
+		Teacher Mr_Dela_Cruz = new Teacher("Mr. Dela Cruz",45,"Male","Computer Studies",CS101,CS102);
+		
+		Ana_Santos.displayStudent();
+		System.out.println("\n");
+		Mr_Dela_Cruz.displayTeacher();
+		System.out.println("\n");
+		CS101.displayCourse();
+		CS102.displayCourse();
+	}
 
-//Teacher Mr_Dela_Cruz = new Teacher("Mr. Dela Cruz",45,"Male","Computer Studies",CS101,CS102);
-//Mr_Dela_Cruz.displayTeacher();
+}
