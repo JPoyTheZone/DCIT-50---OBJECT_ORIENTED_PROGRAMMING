@@ -13,9 +13,15 @@ public class OrderApp {
 	public static void main(String[] args) {
 		ArrayList<Order> orders = new ArrayList<Order>();
 		
+		/**
 		OnlineOrder a_lamp = new OnlineOrder(1 ,1 ,"a small ergonomic lamp");
 		OnlineOrder a_futon = new OnlineOrder(2, 1 ,"single size futon");
 		OnlineOrder an_electricfan = new OnlineOrder(3, 1 ,"a multi function utility fan");
+		**/
+		
+		OnlineOrder a_lamp = new OnlineOrder(1 ,1);
+		OnlineOrder a_futon = new OnlineOrder(2, 1 );
+		OnlineOrder an_electricfan = new OnlineOrder(3, 1);
 		
 		orders.add(a_lamp);
 		orders.add(a_futon);

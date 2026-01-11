@@ -16,7 +16,14 @@ public class OnlineOrder extends Order implements Payable{
 
 	@Override
 	void processOrder() {
-		
+		/**
+		if(this.getOrderStatus()==OrderStatus.PAID) {
+			setStatus(OrderStatus.SHIPPED);
+		}
+		else {
+			System.out.println("OrderStatus can't be set to Shipped, invalid status.");
+		}
+	**/
 	}
 
 	@Override

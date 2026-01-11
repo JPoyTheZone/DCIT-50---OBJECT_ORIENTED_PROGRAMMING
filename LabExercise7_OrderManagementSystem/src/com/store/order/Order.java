@@ -18,14 +18,18 @@ public abstract class Order {
 	
 	public void getOrderSummary() {
 		
+		
 		if (detail.length()>1) {
+			
+			/**
 			System.out.println("---------------------- \n"
 					+ "Order ID : "+ orderID +"\n"
 					+ "Amount : "+ amount +"\n"
 					+ "Status : "+ status +"\n"
 					+ detail +"\n");
+			**/
 		}
-
+		
 		else {
 			System.out.println("---------------------- \n"
 					+ "Order ID : "+ orderID +"\n"
