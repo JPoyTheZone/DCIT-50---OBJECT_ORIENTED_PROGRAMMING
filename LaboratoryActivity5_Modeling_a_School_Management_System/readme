@@ -1,0 +1,15 @@
+This project's intended use is to demonstrate the pillar of OOP, inheritance. 
+
+Inheritance as it names suggests, is the ability of classes to inherit a parent class capabilities and all. The members and methods of the parent class is inherited by using the keyword "Inherits" in the class.
+
+In this project heirarchical inheritance is demonstrated.
+
+There are 3 classes which demonstrates heirarchical inheritance:
+  Person
+  Teacher 
+  Student
+
+Teacher inherits Person
+Student inherits from Person as well.
+
+Although they inherit from the same class, they are still different on a local scale since they are parallel to one another.
