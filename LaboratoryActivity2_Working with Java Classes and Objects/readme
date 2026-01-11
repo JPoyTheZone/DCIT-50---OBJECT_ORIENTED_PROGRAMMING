@@ -1,0 +1,27 @@
+This project's intended use is to demonstrate the concept of class and objects in Java.
+
+Classes are the blueprints of what would be known as objects. Since classes are blueprints, they are what we may call uninstantiated,
+since they aren't initialised and does not carry any modifiable members yet on runtime.
+
+Classes found in project are:
+  Book
+  MyBookList (main)
+
+Objects are the instantiated members of the class. They are created on compilation of the main method, when you initialized an 
+object with the main method, they will be created upon compilation and therefore can be accessed on runtime.
+
+Methods are what can be called "snippets" of code that can be reused. The concept of methods allows you to execute multiple lines 
+of code by calling them (method). This allows you to run the code multiple times in a single object, run it at multiple but varying 
+number of times as needed compared to other objects of same class, and access and edit the members of the class from outside the class without 
+having to explicitly call the member itself. 
+
+The Book Class has methods:
+  changePage(int Target_Page)
+  ChangeAuthor(String Author)
+  ChangeTitle(String Title)
+  yearPublished(int yearPublished)
+
+
+
+Alot of concepts like the Four Pillars of Object Oriented Programming, builds up on classes, objects and methods' implementation and
+interaction.
