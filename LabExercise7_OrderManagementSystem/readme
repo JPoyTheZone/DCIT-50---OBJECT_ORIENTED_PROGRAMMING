@@ -1,0 +1,24 @@
+The project is intended to demonstrate the pillar of Object Oriented programming Abstraction and Encapsulation.
+
+Abstraction is the concept of making abstract classes that cannot be instantiated but can inherited by subclasses. This is usually in tandem with the concept of Polymorphism (though not in this project specifically), which since an abstract method doesn't have to have an implementation, it can take different forms on subclass implementation.
+
+Encapsulation is the concept of protecting the fields or methods of a class from being accessed by it's subclasses or outside the class. By using the identifier 'private' or 'protected', the fields or methods cannot be accessed from outside it's scope (class). By implementing Abstraction the fields or methods is prevented from unintended use.
+
+There are 3 packages in this project:
+  package com.store.main
+  package com.store.order
+  package com.store.payment
+
+In package com.store.main, we have:
+  class OrderApp
+
+In package com.store.order, we have:
+  class Order
+  class OnlineOrder
+  enum OrderStatus
+
+In package com.store.payment, we have:
+  interface Payable
+
+This project is meant to demonstrate what it's like to implement both Abstraction and Encapsulation and Packages.
+Importing packages as if they're external tools allowing developers to utilize the functionality of the package contents, classes and all. By using encapsulatioon, the package classes cannot be tampered with in any unintended way, and by using abstraction to allow developers to develop the system from the ground up effectively.
